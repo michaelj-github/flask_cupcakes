@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Cupcakes!{% endblock %}
+    {% block content %}
+
+        <h1>Cupcakes Home Page</h1>
+
+        <div class="grid-container" id="list">
+        </div>     
+               
+        <h2>Add a cupcake!</h2>
+
+<form id="add-cupcake">
+
+<table>
+    <tr>
+        <td><p class="label"><label for="flavor">Flavor: </label></p></td>
+        <td><input name="flavor" id="flavor"></td>
+    </tr>
+    <tr>
+        <td><p class="label"><label for="size">Size: </label></p></td>
+        <td><input name="size" id="size"></td>
+    </tr>
+    <tr>
+        <td><p class="label"><label for="rating">Rating: </label></p></td>
+        <td><input type="number" name="rating" id="rating"></td>
+    </tr>
+    <tr>
+        <td><p class="label"><label for="image">Image: </label></p></td>
+        <td><input name="image" id="image"></td>
+    </tr>
+</table>
+
+<button class="button addbutton" type="submit">Add</button>
+
+</form>
+
+    {% endblock %}
